@@ -1,6 +1,8 @@
 "use strict";
 
 const Hapi = require("@hapi/hapi");
+const cors = require("cors");
+
 const {
   alerts,
   agents,
@@ -13,8 +15,11 @@ const {
 
 const init = async () => {
   const server = Hapi.server({
-    port: 3000,
+    port: 4000,
     host: "localhost",
+    routes: {
+      cors: true,
+    },
   });
 
   server.route([alerts, agents, agent, rules, rule, home, notFound]);

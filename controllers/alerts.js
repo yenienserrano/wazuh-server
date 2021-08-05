@@ -1,7 +1,7 @@
 const alertsdb = require("../alerts.json");
 
 const getAlerts = async (req, res) => {
-  const limit = req.query.limit || 10;
+  const limit = req.query.limit || 100;
   const offset = req.query.offset || 0;
   const id = req.query.id;
   let base = alertsdb;

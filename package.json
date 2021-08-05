@@ -11,6 +11,7 @@
   "author": "Ian Serrano",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^20.1.5"
+    "@hapi/hapi": "^20.1.5",
+    "cors": "^2.8.5"
   }
 }
